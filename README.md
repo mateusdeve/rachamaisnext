@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RachaMais - Landing Page
 
-## Getting Started
+Landing page do RachaMais desenvolvida com Next.js 16, React 19 e Tailwind CSS v4.
 
-First, run the development server:
+## 🚀 Tecnologias
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Next.js 16** - Framework React com App Router
+- **React 19** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Tipagem estática
+- **Tailwind CSS v4** - Framework CSS utilitário
+- **Google Fonts** - Manrope e Material Symbols
+
+## 📁 Estrutura do Projeto
+
+```
+rachamaisnext/
+├── app/
+│   ├── layout.tsx              # Layout principal
+│   ├── page.tsx                # Página inicial
+│   ├── globals.css             # Estilos globais e configuração Tailwind
+│   ├── politica-de-privacidade/ # Página de políticas de privacidade
+│   └── termos-de-uso/          # Página de termos de uso
+├── components/                 # Componentes React
+│   ├── TopNavBar.tsx
+│   ├── Hero.tsx
+│   ├── HowItWorks.tsx
+│   ├── Features.tsx
+│   ├── HighlightBanner.tsx
+│   ├── AppScreenshots.tsx
+│   ├── SocialProof.tsx
+│   ├── FAQ.tsx
+│   ├── FinalCTA.tsx
+│   └── Footer.tsx
+└── public/                     # Arquivos estáticos
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Instalação
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Instalar dependências
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Executar em desenvolvimento
+npm run dev
 
-## Learn More
+# Build para produção
+npm run build
 
-To learn more about Next.js, take a look at the following resources:
+# Executar em produção
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 Páginas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **/** - Landing page principal
+- **/politica-de-privacidade** - Política de privacidade
+- **/termos-de-uso** - Termos de uso
 
-## Deploy on Vercel
+## 🎨 Design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O design foi mantido fielmente do HTML original, incluindo:
+- Cores personalizadas (primary: #2ecc70)
+- Tipografia Manrope
+- Ícones Material Symbols
+- Modo escuro/claro
+- Layout responsivo
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📝 Componentes
+
+Todos os componentes foram criados como componentes React separados para facilitar manutenção e reutilização.
