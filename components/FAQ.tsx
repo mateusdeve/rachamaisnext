@@ -2,6 +2,19 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import { motion } from "framer-motion";
+
+const viewport = { once: true, amount: 0.2 };
+const containerVariants = {
+  hidden: {},
+  visible: {
+    transition: { staggerChildren: 0.06, delayChildren: 0.1 },
+  },
+};
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.4 } },
+};
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -30,12 +43,31 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-20 px-6 bg-white dark:bg-[#1a261f]" id="faq">
+    <motion.section
+      className="py-20 px-6 bg-white dark:bg-[#1a261f]"
+      id="faq"
+      initial="hidden"
+      whileInView="visible"
+      viewport={viewport}
+      variants={containerVariants}
+    >
       <div className="max-w-[800px] mx-auto">
-        <h2 className="text-3xl font-bold mb-10 text-center">Perguntas Frequentes</h2>
+        <motion.h2
+          className="text-3xl font-bold mb-10 text-center"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={viewport}
+          transition={{ duration: 0.5 }}
+        >
+          Perguntas Frequentes
+        </motion.h2>
         <div className="flex flex-col gap-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="border border-[#dce4e0] dark:border-[#2a3a30] rounded-xl overflow-hidden">
+            <motion.div
+              key={index}
+              className="border border-[#dce4e0] dark:border-[#2a3a30] rounded-xl overflow-hidden"
+              variants={itemVariants}
+            >
               <button
                 className="w-full flex items-center justify-between p-6 text-left hover:bg-background-light dark:hover:bg-background-dark transition-colors cursor-pointer"
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
@@ -50,10 +82,10 @@ export default function FAQ() {
               {openIndex === index && (
                 <div className="px-6 pb-6 text-[#668573] dark:text-gray-400 text-sm">{faq.answer}</div>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

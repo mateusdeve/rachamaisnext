@@ -1,9 +1,18 @@
+"use client";
+
 import Link from "next/link";
 import { Wallet } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function Footer() {
   return (
-    <footer className="py-12 px-6 border-t border-[#dce4e0] dark:border-[#2a3a30]">
+    <motion.footer
+      className="py-12 px-6 border-t border-[#dce4e0] dark:border-[#2a3a30]"
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="max-w-[1200px] mx-auto">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           <div className="col-span-2">
@@ -52,6 +61,6 @@ export default function Footer() {
           </div>
         </div>
       </div>
-    </footer>
+    </motion.footer>
   );
 }

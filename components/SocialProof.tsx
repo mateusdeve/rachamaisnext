@@ -1,4 +1,17 @@
+"use client";
+
 import { Star } from "lucide-react";
+import { motion } from "framer-motion";
+
+const viewport = { once: true, amount: 0.2 };
+const cardVariants = {
+  hidden: { opacity: 0, y: 30 },
+  visible: (i: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.5, delay: i * 0.1 },
+  }),
+};
 
 export default function SocialProof() {
   const testimonials = [
@@ -23,16 +36,36 @@ export default function SocialProof() {
   ];
 
   return (
-    <section className="py-20 px-6">
+    <motion.section
+      className="py-20 px-6"
+      initial="hidden"
+      whileInView="visible"
+      viewport={viewport}
+      variants={{
+        hidden: {},
+        visible: {
+          transition: { staggerChildren: 0.1, delayChildren: 0.1 },
+        },
+      }}
+    >
       <div className="max-w-[1200px] mx-auto">
-        <div className="text-center mb-16">
+        <motion.div
+          className="text-center mb-16"
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={viewport}
+          transition={{ duration: 0.5 }}
+        >
           <h2 className="text-3xl font-bold mb-4">O que dizem nossos usuários</h2>
-        </div>
+        </motion.div>
         <div className="grid md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <div
+            <motion.div
               key={index}
               className="p-8 bg-white dark:bg-[#1a261f] rounded-2xl shadow-sm border border-[#dce4e0] dark:border-[#2a3a30]"
+              variants={cardVariants}
+              custom={index}
+              whileHover={{ y: -4, transition: { duration: 0.2 } }}
             >
               <div className="flex items-center gap-4 mb-4">
                 <div
@@ -50,10 +83,10 @@ export default function SocialProof() {
                 </div>
               </div>
               <p className="text-[#668573] italic">{testimonial.text}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
