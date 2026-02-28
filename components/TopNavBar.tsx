@@ -14,18 +14,21 @@ export default function TopNavBar() {
           </Link>
         </div>
         <div className="hidden md:flex items-center gap-8">
-          <a className="text-sm font-medium hover:text-primary transition-colors" href="#inicio">
+          <a className="text-sm font-medium hover:text-primary transition-colors" href="/#inicio">
             Início
           </a>
-          <a className="text-sm font-medium hover:text-primary transition-colors" href="#como-funciona">
+          <a className="text-sm font-medium hover:text-primary transition-colors" href="/#como-funciona">
             Como funciona
           </a>
-          <a className="text-sm font-medium hover:text-primary transition-colors" href="#funcionalidades">
+          <a className="text-sm font-medium hover:text-primary transition-colors" href="/#funcionalidades">
             Funcionalidades
           </a>
-          <a className="text-sm font-medium hover:text-primary transition-colors" href="#faq">
+          <a className="text-sm font-medium hover:text-primary transition-colors" href="/#faq">
             FAQ
           </a>
+          <Link className="text-sm font-medium hover:text-primary transition-colors" href="/suporte">
+            Suporte
+          </Link>
         </div>
         <button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-bold text-sm transition-all shadow-lg shadow-primary/20 cursor-pointer">
           Download

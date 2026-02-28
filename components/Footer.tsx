@@ -52,6 +52,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-[#dce4e0] dark:border-[#2a3a30] text-xs text-[#668573]">
           <p>© 2024 RachaMais. Todos os direitos reservados.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
+            <Link className="hover:text-primary" href="/suporte">
+              Suporte
+            </Link>
             <Link className="hover:text-primary" href="/termos-de-uso">
               Termos de Uso
             </Link>
