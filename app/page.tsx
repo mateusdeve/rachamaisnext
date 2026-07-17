@@ -3,7 +3,6 @@ import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import Features from "@/components/Features";
 import HighlightBanner from "@/components/HighlightBanner";
-import SocialProof from "@/components/SocialProof";
 import FAQ from "@/components/FAQ";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
@@ -16,7 +15,6 @@ export default function Home() {
       <HowItWorks />
       <Features />
       <HighlightBanner />
-      <SocialProof />
       <FAQ />
       <FinalCTA />
       <Footer />
