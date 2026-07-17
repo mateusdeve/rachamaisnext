@@ -56,34 +56,38 @@ export default function Hero() {
               variants={fadeInUp}
               transition={{ duration: 0.5 }}
             >
-              Divida contas <br /> <span className="text-primary">sem stress</span>
+              Divida contas <br /> <span className="text-primary">sem complicação</span>
             </motion.h1>
             <motion.p
               className="text-lg text-[#668573] dark:text-gray-400 max-w-[500px]"
               variants={fadeInUp}
               transition={{ duration: 0.5, delay: 0.1 }}
             >
-              O RachaMais ajuda você a organizar despesas de viagens, jantares e muito mais com facilidade e total transparência.
+              O RachaMais ajuda você a dividir despesas de viagens, república, rolês e da casa, acompanhar quem deve quanto e acertar tudo via PIX.
             </motion.p>
           </div>
           <motion.div
-            className="flex flex-wrap gap-4"
+            className="flex flex-col items-start gap-2"
             variants={{
               initial: { opacity: 0, y: 16 },
               animate: { opacity: 1, y: 0, transition: { duration: 0.5, delay: 0.3 } },
             }}
           >
-            <motion.button
+            <motion.a
+              href="https://apps.apple.com/br/app/id6758673327"
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full lg:w-auto justify-center flex items-center gap-4 bg-white text-[#121714] px-8 py-4 rounded-xl font-bold shadow-xl cursor-pointer border-0"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
             >
               <Smartphone className="size-8 text-[#121714]" />
               <div className="flex flex-col items-start leading-none justify-center text-left">
-                <span className="text-[10px] uppercase font-normal text-gray-500">Baixe agora na</span>
+                <span className="text-[10px] uppercase font-normal text-gray-500">Baixe grátis na</span>
                 <span className="text-lg font-bold text-[#121714]">App Store</span>
               </div>
-            </motion.button>
+            </motion.a>
+            <span className="text-sm text-[#668573] dark:text-gray-400">Disponível para iPhone</span>
           </motion.div>
         </div>
         <motion.div

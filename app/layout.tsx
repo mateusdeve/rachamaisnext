@@ -9,8 +9,8 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "RachaMais - Divida contas sem stress",
-  description: "O RachaMais ajuda você a organizar despesas de viagens, jantares e muito mais com facilidade e total transparência.",
+  title: "RachaMais - Divida contas sem complicação",
+  description: "O RachaMais ajuda você a dividir despesas em grupo (viagens, república, rolês e casa), acompanhar quem deve quanto e acertar tudo via PIX. Grátis para iPhone.",
 };
 
 export default function RootLayout({

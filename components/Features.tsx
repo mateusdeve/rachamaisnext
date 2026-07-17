@@ -15,28 +15,28 @@ const itemVariants = {
 export default function Features() {
   const features = [
     {
-      title: "Divisão igualitária",
-      description: "Divida por igual, por porcentagem ou valor exato.",
+      title: "Divisão flexível",
+      description: "Divida por igual, por valores ou por porcentagem, escolhendo entre quais membros.",
     },
     {
-      title: "Cálculo automático",
-      description: "Precisão matemática sem precisar de calculadoras.",
+      title: "Dívidas simplificadas",
+      description: "O app calcula os saldos e reduz o número de transferências entre as pessoas.",
     },
     {
-      title: "Grupos ilimitados",
-      description: "Organize viagens, churrascos e a casa separadamente.",
+      title: "Grupos por contexto",
+      description: "Organize viagens, república, rolês e a casa em grupos separados.",
     },
     {
-      title: "Histórico de gastos",
-      description: "Acompanhe todos os lançamentos passados com clareza.",
+      title: "Saldo geral e atividades",
+      description: "Veja quanto tem a receber ou a pagar e todo o histórico de despesas e acertos.",
     },
     {
       title: "Notificações",
-      description: "Fique por dentro quando alguém adiciona ou paga algo.",
+      description: "Fique por dentro quando alguém adiciona uma despesa ou registra um pagamento.",
     },
     {
-      title: "Exportação de dados",
-      description: "Gere PDFs ou planilhas de todos os gastos do grupo.",
+      title: "Acerto via PIX",
+      description: "Cadastre sua chave PIX no perfil e receba os pagamentos direto no seu banco.",
     },
   ];
 

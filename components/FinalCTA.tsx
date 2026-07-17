@@ -40,23 +40,27 @@ export default function FinalCTA() {
           Baixe agora e comece a rachar tudo com facilidade.
         </motion.p>
         <motion.div
-          className="flex justify-center relative z-10"
+          className="flex flex-col items-center gap-3 relative z-10"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.35 }}
         >
-          <motion.button
+          <motion.a
+            href="https://apps.apple.com/br/app/id6758673327"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-3 bg-white text-[#121714] px-8 py-4 rounded-xl font-bold shadow-xl cursor-pointer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
           >
             <Smartphone className="size-8" />
             <div className="flex flex-col items-start leading-none text-left">
-              <span className="text-[10px] uppercase opacity-70">Baixe agora na</span>
+              <span className="text-[10px] uppercase opacity-70">Baixe grátis na</span>
               <span className="text-xl">App Store</span>
             </div>
-          </motion.button>
+          </motion.a>
+          <span className="text-sm text-gray-400">Disponível para iPhone</span>
         </motion.div>
       </motion.div>
     </motion.section>

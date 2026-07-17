@@ -26,6 +26,11 @@ export default function FAQ() {
         "Sim, as funcionalidades principais de criar grupos, adicionar despesas e calcular acertos são 100% gratuitas.",
     },
     {
+      question: "Em quais aparelhos o RachaMais funciona?",
+      answer:
+        "O RachaMais está disponível apenas para iPhone (iOS) e pode ser baixado gratuitamente na App Store. Você pode entrar com e-mail e senha, com sua conta Google ou com o Sign in with Apple.",
+    },
+    {
       question: "Preciso de internet para usar?",
       answer:
         "Sim, o RachaMais requer conexão com a internet para sincronizar dados entre os membros do grupo e manter tudo atualizado em tempo real.",
@@ -38,7 +43,7 @@ export default function FAQ() {
     {
       question: "O app faz pagamentos direto?",
       answer:
-        "Não, o RachaMais não processa pagamentos. O app apenas calcula quem deve quanto para quem, facilitando o acerto de contas. Os pagamentos são feitos diretamente entre os membros do grupo através dos métodos que preferirem.",
+        "Não, o RachaMais não processa pagamentos. O app calcula quem deve quanto para quem e simplifica as dívidas. O acerto é feito diretamente entre os membros via PIX (você cadastra sua chave PIX no perfil), e cada um confirma no app quando recebe o pagamento.",
     },
   ];
 

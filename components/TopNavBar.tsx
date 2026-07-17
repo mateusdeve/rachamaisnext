@@ -30,9 +30,14 @@ export default function TopNavBar() {
             Suporte
           </Link>
         </div>
-        <button className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-bold text-sm transition-all shadow-lg shadow-primary/20 cursor-pointer">
-          Download
-        </button>
+        <a
+          href="https://apps.apple.com/br/app/id6758673327"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-primary hover:bg-primary/90 text-white px-6 py-2 rounded-lg font-bold text-sm transition-all shadow-lg shadow-primary/20 cursor-pointer"
+        >
+          Baixar na App Store
+        </a>
       </div>
     </div>
   );

@@ -19,10 +19,13 @@ export default function HighlightBanner() {
           viewport={{ once: true, amount: 0.3 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          Mais de 50.000 pessoas já racharam suas contas com a gente!
+          Divida contas em grupo e acerte tudo via PIX, sem complicação.
         </motion.h2>
-        <motion.button
-          className="bg-white hover:bg-opacity-90 px-10 py-4 rounded-xl font-bold text-lg shadow-xl transition-all cursor-pointer"
+        <motion.a
+          href="https://apps.apple.com/br/app/id6758673327"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white hover:bg-opacity-90 px-10 py-4 rounded-xl font-bold text-lg shadow-xl transition-all cursor-pointer"
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -30,8 +33,8 @@ export default function HighlightBanner() {
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.98 }}
         >
-          Começar a usar agora
-        </motion.button>
+          Baixar grátis na App Store
+        </motion.a>
       </div>
     </motion.section>
   );

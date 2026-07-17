@@ -42,8 +42,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a className="hover:text-primary" href="#inicio">
-                  Download
+                <a
+                  className="hover:text-primary"
+                  href="https://apps.apple.com/br/app/id6758673327"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Baixar na App Store
                 </a>
               </li>
             </ul>
